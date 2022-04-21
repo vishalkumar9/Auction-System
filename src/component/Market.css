@@ -1,0 +1,21 @@
+.item-list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  /* max-width: 50 rem; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.item-list .single-item {
+  list-style: none;
+  margin: 10px auto;
+  padding: 0;
+  width: 350px;
+  /* max-width: rem; */
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
