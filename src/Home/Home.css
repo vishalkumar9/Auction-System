@@ -1,0 +1,51 @@
+.home {
+  display: flex;
+  flex-direction: column;
+}
+
+.home .first {
+  width: 100%;
+  background-color: rgb(4, 35, 63);
+  text-align: center;
+  margin: auto;
+}
+.first .first-content {
+  margin: 30px auto;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+}
+
+.first-content .ImageShow img {
+  width: 50%;
+}
+.first-content .Content {
+  margin: auto;
+}
+.first-content .Content h1 {
+  color: aliceblue;
+  font-size: 6vw;
+}
+
+.home .second {
+  background-color: aliceblue;
+  width: 100%;
+  text-align: center;
+}
+.second .second-content {
+  margin: 30px auto;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+}
+
+.second-content .ImageShow img {
+  width: 50%;
+}
+.second-content .Content {
+  margin: auto;
+}
+.second-content .Content h1 {
+  color: rgb(4, 35, 63);
+  font-size: 6vw;
+}
