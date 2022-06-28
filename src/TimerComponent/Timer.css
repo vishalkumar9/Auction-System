@@ -1,0 +1,28 @@
+
+.show-counter {
+    display: flex;
+    flex-direction: row;
+    color: rgba(9,9,121,1);
+}
+
+.show-counter .countdown {
+    line-height: 1.25rem;
+    padding: 0 0.45rem 0 0.45rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.show-counter .countdown {
+    color: rgba(9,9,121,1);
+}
+
+.show-counter .countdown > p {
+    margin: 0;
+}
+
+.show-counter .countdown > span {
+    text-transform: uppercase;
+    font-size: 0.45rem;
+    line-height: 1rem;
+}

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/esm/Button";
 import "./ModalView.css";
+import Timer from "../TimerComponent/Timer";
 
 function ModalView(props) {
   return (
@@ -17,6 +18,7 @@ function ModalView(props) {
           <Modal.Title>{props.product.Product_Name}</Modal.Title>
         </Modal.Header>
         <Modal.Body className="modal-body">
+            <Timer duration={props.product.duration}/>
           <div className="image-div">
             <img src={props.product.img} className="responsive" alt="" />
           </div>
@@ -84,8 +86,8 @@ function ModalView(props) {
           </span>
         </Modal.Body>
         <Modal.Footer>
-          <input placeholder="Please enter a amount"></input>
-          <Button variant="primary">Make BID</Button>
+            <input placeholder="Please enter a amount"></input>
+            <Button variant="primary">Make BID</Button>
         </Modal.Footer>
       </Modal>
     </>

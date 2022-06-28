@@ -1,0 +1,186 @@
+
+.form_for_item_upload {
+    position: absolute;
+    margin:430px auto;
+    left: 50%;
+    width: 90%;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: aliceblue;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.form_for_item_upload .ImageShow{
+    margin: auto;
+}
+.form_for_item_upload .ImageShow img{
+    margin: auto;
+    width: 70%;
+}
+
+.form_for_item_upload .item_upload_form{
+    width: 80%;
+    margin: auto;
+    flex: auto;
+    flex-direction: column;
+}
+
+.form_for_item_upload h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: rgb(4, 35, 63);
+    text-align: center;
+}
+
+.form_for_item_upload .user-box {
+    position: relative;
+}
+
+.form_for_item_upload .user-box input {
+    width: 80%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: rgb(4, 35, 63);
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid rgb(4, 35, 63);
+    outline: none;
+    background: transparent;
+}
+.form_for_item_upload .user-box textarea {
+    width: 80%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: rgb(4, 35, 63);
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid rgb(4, 35, 63);
+    outline: none;
+    background: transparent;
+}
+.form_for_item_upload .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 20px;
+    color: rgb(4, 35, 63);
+    pointer-events: none;
+    transition: .5s;
+}
+
+
+.form_for_item_upload .user-box input:focus ~ label,
+.form_for_item_upload .user-box input:valid ~ label {
+    top: -30px;
+    left: 0;
+    color: rgb(4, 35, 63);
+    font-size: 12px;
+}
+
+.form_for_item_upload form button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: rgb(4, 35, 63);
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+}
+
+.form_for_item_upload button:hover {
+    background: rgb(4, 35, 63);
+    color: aliceblue;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(4, 35, 63),
+    0 0 25px rgb(4, 35, 63),
+    0 0 50px rgb(4, 35, 63),
+    0 0 100px rgb(4, 35, 63);
+}
+
+.form_for_item_upload button span {
+    position: absolute;
+    display: block;
+}
+
+.form_for_item_upload button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgb(4, 35, 63));
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+    50%,100% {
+        left: 100%;
+    }
+}
+
+.form_for_item_upload button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, rgb(4, 35, 63));
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+    50%,100% {
+        top: 100%;
+    }
+}
+
+.form_for_item_upload button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, rgb(4, 35, 63));
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+    50%,100% {
+        right: 100%;
+    }
+}
+
+.form_for_item_upload button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, rgb(4, 35, 63));
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+    50%,100% {
+        bottom: 100%;
+    }
+}

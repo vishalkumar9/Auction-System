@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import ModalView from "./Modal";
+import Timer from "../TimerComponent/Timer";
 
 const CardView = (props) => {
   console.log(props.product);
@@ -16,6 +17,7 @@ const CardView = (props) => {
       <Card.Body>
         <Card.Title>{props.product.Product_Name}</Card.Title>
         <Card.Text>{props.product.Product_Description}</Card.Text>
+        <Timer duration={props.product.duration}/>
         <Button variant="primary" onClick={openModal}>
           BID
         </Button>
